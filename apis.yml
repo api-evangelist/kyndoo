@@ -1,19 +1,53 @@
 aid: kyndoo
 name: Kyndoo
-description: Kyndoo is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Kyndoo Inc. was a San Francisco based influencer-marketing software platform
+  that let brands find, connect to and work with social-media influencers. Its
+  differentiator was audience authenticity: Kyndoo built a database of vetted
+  influencers and published the "Kyndex" score, described as a credit score for
+  influencers, which measured whether a following was made of real people with
+  buying intent rather than purchased bot accounts. Around that database it sold
+  campaign management, attribution and brand-safety tooling to brands, taking a
+  service fee on the influencer deals brands negotiated through the platform.
+  The company was surfaced as a 500 Global portfolio company. Kyndoo was
+  acquired by CIPIO (cipio.ai) and its web property is now offline - kyndoo.com
+  has not served a page since early 2022. Kyndoo never published a public API,
+  developer portal or SDK, so this profile is an identity and lifecycle record
+  rather than an API profile.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://web.archive.org/web/2022id_/https://kyndoo.com/assets/admin/app-assets/images/photos/baf95abd64b36312795719a8fbece3c2.png
 url: https://raw.githubusercontent.com/api-evangelist/kyndoo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-api
+x-status: acquired
+x-acquired-by: cipio
+x-operating: false
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Influencer Marketing
+- Marketing
+- Social Media
+- Advertising
+- Customer Data Platform
+- Analytics
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +57,30 @@ maintainers:
 common:
 - type: Website
   url: https://kyndoo.com
+- type: Lifecycle
+  name: Kyndoo lifecycle and acquisition record
+  url: lifecycle/kyndoo-lifecycle.yml
+- type: DomainSecurity
+  name: Kyndoo domain security probe
+  url: security/kyndoo-domain-security.yml
+- type: Successor
+  name: CIPIO (acquirer)
+  url: https://cipio.ai/
+- type: Archive
+  name: Final Internet Archive capture of kyndoo.com
+  url: https://web.archive.org/web/20220126073250/https://kyndoo.com/
+- type: Twitter
+  url: https://twitter.com/wekyndooit
+- type: LinkedIn
+  url: https://www.linkedin.com/company/18708639/
+- type: Instagram
+  url: https://www.instagram.com/wekyndooit/
+- type: Facebook
+  url: https://www.facebook.com/kyndooinfluencers/
+- type: YouTube
+  url: https://www.youtube.com/channel/UCHjDBUh6inVQMJWajZsBR1Q
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
