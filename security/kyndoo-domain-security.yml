@@ -1,0 +1,76 @@
+generated: '2026-07-19'
+method: probed
+source: dig + TLS/HTTP probe of kyndoo.com and www.kyndoo.com
+note: >-
+  Kyndoo was acquired by CIPIO (cipio.ai) and the kyndoo.com web property has
+  been taken offline. DNS still resolves and mail (Google Workspace) is still
+  configured, but no HTTP/HTTPS listener answers on either the apex or www.
+  Absence of records below is recorded data, not a gap in the probe.
+hosts:
+  - host: kyndoo.com
+    address: 35.209.23.179
+    https: false
+    http: false
+    port_443: closed
+    port_80: closed
+    reachable: false
+    tls_version: null
+    hsts: null
+    evidence: connection timed out on both 80 and 443
+  - host: www.kyndoo.com
+    address: 54.190.94.109
+    https: false
+    http: false
+    port_443: closed
+    reachable: false
+    tls_version: null
+    hsts: null
+    evidence: connection timed out on 443
+domains:
+  - domain: kyndoo.com
+    registrar: GoDaddy.com, LLC
+    created: '2018-06-26'
+    expires: '2027-06-26'
+    nameservers:
+      - ns-1386.awsdns-45.org
+      - ns-1617.awsdns-10.co.uk
+      - ns-469.awsdns-58.com
+      - ns-825.awsdns-39.net
+    dnssec: false
+    caa: []
+    spf: false
+    dmarc: false
+    dmarc_policy: null
+    txt:
+      - MS=ms68894663
+    mx:
+      - aspmx.l.google.com
+      - alt1.aspmx.l.google.com
+      - alt2.aspmx.l.google.com
+      - alt3.aspmx.l.google.com
+      - alt4.aspmx.l.google.com
+    mail_provider: Google Workspace
+well_known_probe:
+  note: >-
+    All /.well-known/ discovery endpoints were probed on both hosts and none
+    were reachable (connection failure, not a 404). No WellKnown or SecurityTxt
+    artifact is claimed for this provider.
+  documents:
+    - path: /.well-known/security.txt
+      status: 0
+      result: unreachable
+    - path: /.well-known/openid-configuration
+      status: 0
+      result: unreachable
+    - path: /.well-known/oauth-authorization-server
+      status: 0
+      result: unreachable
+    - path: /.well-known/api-catalog
+      status: 0
+      result: unreachable
+    - path: /.well-known/ai-plugin.json
+      status: 0
+      result: unreachable
+    - path: /llms.txt
+      status: 0
+      result: unreachable

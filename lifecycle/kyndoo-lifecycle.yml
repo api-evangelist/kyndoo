@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://web.archive.org/web/20220126073250/https://kyndoo.com/
+status: acquired
+operating: false
+summary: >-
+  Kyndoo Inc. was a San Francisco based influencer-marketing platform that
+  vetted social-media influencers and scored audience authenticity. It was
+  acquired by CIPIO (cipio.ai); the kyndoo.com site carried a site-wide
+  "Kyndoo has been acquired by CIPIO" banner in its final captures and the
+  domain no longer serves a website.
+acquisition:
+  acquired_by: CIPIO
+  acquirer_url: https://cipio.ai/
+  announced_on_site: true
+  evidence: >-
+    Site-wide banner "Kyndoo has been acquired by CIPIO - Find out More!"
+    linking to https://cipio.ai/, present on every archived page including the
+    final 2022-01-26 capture. The login modal was relabeled "Sign-in to CIPIO".
+  source: https://web.archive.org/web/20220126073250/https://kyndoo.com/
+shutdown:
+  web_property_offline: true
+  last_successful_archive: '2022-01-26'
+  evidence: >-
+    Internet Archive CDX shows the last HTTP 200 capture of kyndoo.com on
+    2022-01-26. As of 2026-07-19 neither kyndoo.com nor www.kyndoo.com accepts
+    connections on port 80 or 443, though DNS and Google Workspace MX records
+    remain configured.
+  probed: '2026-07-19'
+api:
+  had_public_api: false
+  evidence: >-
+    No developer portal, API reference, SDK, or api./developer./docs. subdomain
+    was ever present in the archived site or in DNS. The site exposed only
+    application routes (/user/*, /campaign-invite, /onboard) behind login.
+versioning: null
+deprecation: null
+sla: null
+status_page: null
+deprecated_operations: []
