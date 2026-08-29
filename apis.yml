@@ -38,6 +38,9 @@ accessModel:
   method: derived
 image: https://web.archive.org/web/2022id_/https://kyndoo.com/assets/admin/app-assets/images/photos/baf95abd64b36312795719a8fbece3c2.png
 url: https://raw.githubusercontent.com/api-evangelist/kyndoo/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Kyndoo never published a public API, developer portal or SDK, so this profile is an identity and lifecycle record rather than an API profile."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
